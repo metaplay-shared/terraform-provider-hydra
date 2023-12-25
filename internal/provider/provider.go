@@ -32,7 +32,7 @@ func New() *schema.Provider {
 		Schema: map[string]*schema.Schema{
 			"endpoint": {
 				Type:        schema.TypeString,
-				Required:    true,
+				Optional:    true,
 				DefaultFunc: schema.EnvDefaultFunc("HYDRA_ADMIN_URL", nil),
 			},
 			"retry": {
